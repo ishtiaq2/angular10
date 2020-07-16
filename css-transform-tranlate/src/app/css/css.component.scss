@@ -1,0 +1,98 @@
+.main {
+    margin: 1rem auto;
+    width: 50rem;
+    height: 60rem;
+    padding: 5rem;
+    border: 2px solid lightblue;
+    box-sizing: border-box;
+    .test {
+        width: 20rem;
+        height: 5rem;
+        background: linear-gradient(90deg, rgba(222,230,118,1) 16%, rgba(72,125,60,1) 51%, rgba(221,227,47,1) 90%);
+        color: white;
+        text-align: center;
+        border: 2px solid gray;
+        border-radius: 3px;
+        line-height: 5rem;
+       span {
+           display: inline-block;
+           vertical-align: middle;
+           line-height: normal;
+           border: 1px solid;
+           h5 {
+               margin-bottom: 0;
+               margin-top: 0.5rem;
+           }
+       }
+    }
+
+    .test1 {
+        z-index: 3;
+        position: relative;
+    }
+
+    .test2 {
+        transform: translate(20rem, 0);
+        z-index: 1;
+        position: relative;
+    }
+
+    .test3 {
+        z-index: 2;
+        transform: rotate(45deg);
+        position: relative;
+    }
+
+    .test4 {
+        z-index: 0;
+        margin-top: 5rem;
+        position: relative;
+        transition: all 2s ease-in-out;
+    }
+    .test4:hover {
+        transform: scale(1.2, 2);
+        z-index: 4;
+        transition: all 2s ease-in-out;
+    }
+
+    .skew-wrapper {
+        
+        width: 90%;
+        height: 40%;
+        border: 2px solid aqua;
+        border-radius: 3px;
+        margin-top: 1rem;
+        h3 {
+            margin-top: 0;
+            text-align: center;
+            color: white;
+            background: linear-gradient(90deg, red, green, blue);
+        }
+
+        .skew {
+            width: 70%;
+            height: 3rem;
+            //background: linear-gradient(180deg, red, green, blue);
+            background: linear-gradient(#4138f5 0%, #59c4e4 100%);
+            margin-left: auto;
+            margin-right: auto;
+            border-radius: 1px;
+            margin: 0 auto;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            box-sizing: border-box;
+        }
+
+        .skew2 {
+            background: linear-gradient(#59c4e4 0%, #4138f5 100%);
+            transform-origin: top right;
+            transform: skew(15deg);
+        }
+        .skew3 {
+            background: linear-gradient(#59c4e4 0%, #4138f5 100%);
+            transform-origin: bottom right;
+            transform: skew(345deg);
+        }
+    }
+}
