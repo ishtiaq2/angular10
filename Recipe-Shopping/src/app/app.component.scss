@@ -1,0 +1,17 @@
+app-nav {
+    position: absolute;
+    width: 100%;
+    height: 10vh;
+    background-color: lightseagreen;
+    color: white;
+    padding: 0;
+}
+
+router-outlet {
+    position: absolute;
+    width: 100%;
+    height: 90vh;
+    top: 10vh;
+    box-sizing: border-box;
+    background-color: lightskyblue;
+}
