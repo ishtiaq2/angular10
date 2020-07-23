@@ -1,0 +1,10 @@
+<h2> Pass Data to Parent </h2>
+<input type='text' #input>
+<input type='button' 
+    value='Add to List' class='btn btn-primary'
+    (click)='addToList(input.value)'>
+
+
+
+    <h2>Currently in List: </h2>
+    <p *ngFor="let item of list"> {{ item }} </p>

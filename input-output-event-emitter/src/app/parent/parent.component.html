@@ -1,0 +1,15 @@
+<header>
+    <ul>
+        <li>
+            <a routerLink='/child1' rotuerLinkActive=active>Child 1</a>
+        </li>
+        <li>
+            <a routerLink='/child2' routerLinkActive=active>Child 2</a>
+        </li>
+        <li>
+            <a routerLink='/children-wrapper' routerLinkActive=active>Children wrapper</a>
+        </li>
+    </ul>
+</header>
+
+<router-outlet (activate)="childActivated($event)"></router-outlet>

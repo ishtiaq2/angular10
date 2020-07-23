@@ -1,0 +1,38 @@
+* {
+    box-sizing: border-box;
+}
+header {
+    margin-top: 0;
+    height: 20vh;
+    background-color: lightgray;
+    ul {
+        list-style: none;
+        padding: 1.5rem;
+        li {
+            text-decoration: none;
+            display: inline-block;
+            width: 10rem;
+            height: 4rem;
+            padding: 0;
+            border-radius: 3px;
+            margin-right: 0.5rem;
+            a {
+                display: block;
+                color: white;
+                font-size: 14px;
+                font-weight: bold;
+                text-decoration: none;
+                line-height: 20px; 
+                height:auto; 
+                padding: 2px;
+            }
+        }
+
+        li:hover {
+            a {
+                font-size: 16px;
+            }
+        }
+    
+    }
+}
