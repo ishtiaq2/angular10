@@ -1,0 +1,52 @@
+.dimensions {
+    padding: 2rem;
+    border: 2px solid lightblue;
+    border-radius: 3px;
+    margin: 0.5rem;
+}
+
+.dropdown-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+ul li {
+    display: none;
+}
+
+.flexbox {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: flex-start;
+    width: 10rem;
+    padding: 0;
+}
+
+.flexbox a {
+    text-decoration: none;
+}
+
+.flexbox a:link, a:active, a:visited {
+    color: gray;
+}
+.open ul {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 0;
+}
+
+.open ul li {
+    background-color: lightgreen;
+    display: block;
+}
+
+
+.caret {
+    width: 0; 
+    height: 0; 
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid gray;
+    display: inline-block;
+}
