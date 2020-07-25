@@ -4,4 +4,9 @@
     top: 10vh;
     color: white;
     font-weight: bold;
+    
+    li:hover {
+        cursor: pointer;
+        background-color: darken(skyblue, 20%);
+    }
 }

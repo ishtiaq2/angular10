@@ -1,3 +1,35 @@
-<div id='recipe-container' class='recipe-container container'>
-    This is recipe
+<div id='recipe-container' 
+    class='recipe-container container'
+    (addToShoppingList)='addToShoppingList($event)'>
+    <h3>Recipes List</h3>
+    <ul>
+        <li *ngFor='let rec of recipesList'>
+            <input type='checkbox' (change)='checkItem($event, getKey(rec))'>
+            <span 
+                (click)='rec[getKey(rec)].expanded = !rec[getKey(rec)].expanded'>
+                {{ getKey(rec) }}
+            </span>
+            <ul *ngIf=rec[getKey(rec)].expanded>
+                <h4>Ingredients</h4>
+                <li *ngFor="let item of rec[getKey(rec)].items">
+                    {{ item }}
+                </li>
+            </ul>
+            <ul *ngIf=rec[getKey(rec)].expanded>
+                <h4>Recipe</h4>
+                <li> {{rec[getKey(rec)].recipe}}</li>
+            </ul>
+            <hr>
+        </li>
+    </ul>
+
+    <div>
+        <h4>Checked Item:</h4>
+        <p *ngFor='let item of checkedItem'>
+            {{ item }}
+        </p>
+    </div>
+    <input type="button" class='btn btn-primary'
+        (click)="addToCart()"
+        value="Add to Cart">
 </div>

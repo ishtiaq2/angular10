@@ -6,10 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'Recipe-Shopping';
-
-  public addToShoppingList(emittedValue: any): void{
-    console.log(emittedValue);
-  }
-
+  title = 'in-out-event-emitter';
 }
